@@ -1,36 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Raj Kumar A - Professional Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --background-color: #ecf0f1;
-            --text-color: #2c3e50;
+            --primary-color: #1f2937;
+            --secondary-color: #2563eb;
+            --background-color: #f9fafb;
+            --text-color: #111827;
             --card-bg: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
         }
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: var(--background-color);
             color: var(--text-color);
         }
-        header {
-            background: var(--primary-color);
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: white;
-            padding: 40px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+        }
+        header {
+            background: var(--secondary-color);
+            color: white;
+            padding: 60px 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            animation: fadeIn 1s ease-in-out;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-in-out;
         }
         header p a {
-            color: #ecf0f1;
+            color: #bfdbfe;
+            text-decoration: none;
         }
         .container {
             max-width: 960px;
@@ -41,9 +68,21 @@
             background-color: var(--card-bg);
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            transform: translateY(40px);
+            animation: slideIn 0.8s forwards;
         }
+        section:nth-of-type(1) { animation-delay: 0.2s; }
+        section:nth-of-type(2) { animation-delay: 0.4s; }
+        section:nth-of-type(3) { animation-delay: 0.6s; }
+        section:nth-of-type(4) { animation-delay: 0.8s; }
+        section:nth-of-type(5) { animation-delay: 1.0s; }
+        section:nth-of-type(6) { animation-delay: 1.2s; }
+        section:nth-of-type(7) { animation-delay: 1.4s; }
+        section:nth-of-type(8) { animation-delay: 1.6s; }
+
         h2 {
             color: var(--secondary-color);
             margin-top: 0;
@@ -52,17 +91,41 @@
             padding-left: 20px;
         }
         footer {
+            background-color: #f3f4f6;
             text-align: center;
             padding: 15px;
             font-size: 14px;
-            color: #888;
+            color: #6b7280;
+        }
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div><strong>Raj Kumar A</strong></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#languages">Languages</a>
+        </div>
+    </nav>
+
     <header>
+        <img src="https://via.placeholder.com/150" alt="Raj Kumar A Photo">
         <h1>Raj Kumar A</h1>
-        <p>📞 6380273557 | 📧 <a href="mailto:rajkumarark22@gmail.com">mail</a><br>
+        <p>📞 6380273557 | 📧 <a href="mailto:rajkumarark22@gmail.com">rajkumarark22@gmail.com</a><br>
         💼 <a href="https://www.linkedin.com/in/raj-kumar-a-/" target="_blank">LinkedIn</a></p>
     </header>
 
@@ -132,7 +195,7 @@
     </div>
 
     <footer>
-        <p>© 2025 Raj Kumar A | Portfolio Website</p>
+        <p>© 2025 Raj Kumar A | Business Portfolio Website</p>
     </footer>
 </body>
 </html>
