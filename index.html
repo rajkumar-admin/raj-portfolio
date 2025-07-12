@@ -1,202 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Raj Kumar A - Professional Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #1f2937;
-            --secondary-color: #2563eb;
-            --background-color: #f9fafb;
-            --text-color: #111827;
-            --card-bg: #ffffff;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-        nav {
-            background-color: var(--primary-color);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 600;
-        }
-        header {
-            background: var(--secondary-color);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            animation: fadeIn 1s ease-in-out;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            animation: fadeIn 1s ease-in-out;
-        }
-        header p a {
-            color: #bfdbfe;
-            text-decoration: none;
-        }
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding: 20px;
-        }
-        section {
-            background-color: var(--card-bg);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            opacity: 0;
-            transform: translateY(40px);
-            animation: slideIn 0.8s forwards;
-        }
-        section:nth-of-type(1) { animation-delay: 0.2s; }
-        section:nth-of-type(2) { animation-delay: 0.4s; }
-        section:nth-of-type(3) { animation-delay: 0.6s; }
-        section:nth-of-type(4) { animation-delay: 0.8s; }
-        section:nth-of-type(5) { animation-delay: 1.0s; }
-        section:nth-of-type(6) { animation-delay: 1.2s; }
-        section:nth-of-type(7) { animation-delay: 1.4s; }
-        section:nth-of-type(8) { animation-delay: 1.6s; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajkumar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-950 text-white font-sans">
 
-        h2 {
-            color: var(--secondary-color);
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            background-color: #f3f4f6;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
-            color: #6b7280;
-        }
-        @keyframes slideIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
-</head>
-<body>
-    <nav>
-        <div><strong>Raj Kumar A</strong></div>
-        <div>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#languages">Languages</a>
-        </div>
-    </nav>
-
-    <header>
-        <img src="https://via.placeholder.com/150" alt="Raj Kumar A Photo">
-        <h1>Raj Kumar A</h1>
-        <p>📞 6380273557 | 📧 <a href="mailto:rajkumarark22@gmail.com">rajkumarark22@gmail.com</a><br>
-        💼 <a href="https://www.linkedin.com/in/raj-kumar-a-/" target="_blank">LinkedIn</a></p>
+    <!-- Header -->
+    <header class="flex items-center justify-between p-5 border-b border-gray-700">
+      <h1 class="text-2xl font-bold">Rajkumar</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
     </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>An enthusiastic MBA student with a passion for marketing, business analytics, and digital transformation. Skilled in Microsoft Office and certified in multiple online learning platforms, I seek opportunities that challenge and grow my practical knowledge.</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center text-center py-20 px-5">
+      <img src="https://via.placeholder.com/120" alt="Profile" class="rounded-full mb-4">
+      <h2 class="text-3xl font-bold mb-2">Hi, I'm Rajkumar</h2>
+      <p class="text-gray-400 mb-4">Fresher | Digital Marketing | Business Analyst</p>
+      <a href="mailto:rajkumarark22@gmail.com" class="bg-blue-600 px-6 py-2 rounded-full hover:bg-blue-700">Hire Me</a>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>MBA</strong>, SRM Institute of Science and Technology (2023–2025), CGPA: 9.20</li>
-                <li><strong>BBA</strong>, SRM Trichy Arts and Science College (2020–2023), 72%</li>
-            </ul>
-        </section>
+    <!-- About -->
+    <section id="about" class="px-8 py-16 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-700">About Me</h3>
+      <p class="text-gray-300 leading-relaxed">
+        I am a recent graduate with strong skills in digital marketing, social media analysis, and business intelligence.
+        I'm passionate about transforming ideas into impactful solutions and am eager to contribute to a growing organization.
+      </p>
+    </section>
 
-        <section id="experience">
-            <h2>Internship Experience</h2>
-            <ul>
-                <li><strong>Andavar Group of Companies</strong> (June–July 2024): Learned marketing, quality control & supply chain operations.</li>
-                <li><strong>SRM Group of Institutions</strong> (Mar–May 2025): Focused on digital marketing & management strategies.</li>
-            </ul>
-        </section>
+    <!-- Skills -->
+    <section id="skills" class="px-8 py-16 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-700">Skills</h3>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-300">
+        <li>Digital Marketing</li>
+        <li>Business Analysis</li>
+        <li>Social Media Tools</li>
+        <li>Canva, Figma</li>
+        <li>Excel, Tableau</li>
+        <li>Content Writing</li>
+      </ul>
+    </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
-                <li>Basic SEO and SEM concepts</li>
-                <li>Digital marketing & analytics tools</li>
-            </ul>
-        </section>
+    <!-- Projects -->
+    <section id="projects" class="px-8 py-16 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-700">Projects</h3>
+      <div class="space-y-6">
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h4 class="text-xl font-bold">SRM Social Media Analytics</h4>
+          <p class="text-gray-400 text-sm">Analyzed Instagram and LinkedIn metrics to improve outreach strategies.</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h4 class="text-xl font-bold">Digital Payment Survey (Trichy)</h4>
+          <p class="text-gray-400 text-sm">Studied UPI usage among small vendors and proposed enhancements for adoption.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>AI for Beginners (HP LIFE)</li>
-                <li>Digital Business Skills (HP LIFE)</li>
-                <li>Business Analysis & Process Management (Coursera)</li>
-                <li>Google Ads for Beginners (Coursera)</li>
-                <li>Data Science & Analytics (HP LIFE)</li>
-                <li>Beginner SEO with SEMrush</li>
-            </ul>
-        </section>
+    <!-- Contact -->
+    <section id="contact" class="px-8 py-16 max-w-4xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-700">Contact Me</h3>
+      <p class="text-gray-400 mb-4">Email: <span id="email">rajkumarark22@gmail.com</span></p>
+      <button onclick="copyEmail()" class="bg-green-600 px-5 py-2 rounded hover:bg-green-700">
+        Copy Email
+      </button>
+    </section>
 
-        <section id="activities">
-            <h2>Workshops & Conferences</h2>
-            <ul>
-                <li>Yi Celerate Learning Conclave 2023</li>
-                <li>Health & Safety Event (2024) – Received recognition for coordination</li>
-            </ul>
-        </section>
-
-        <section id="visits">
-            <h2>Industrial Visits</h2>
-            <ul>
-                <li>Parle Biscuit Factory (2022) – Biscuit manufacturing & quality control</li>
-                <li>Vijay Dairy & Farm Products (2024) – Dairy processing and cold chain management</li>
-            </ul>
-        </section>
-
-        <section id="languages">
-            <h2>Languages</h2>
-            <p>Tamil, English – Fluent (Reading, Speaking, Writing)</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2025 Raj Kumar A | Business Portfolio Website</p>
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-8 border-t border-gray-700">
+      © 2025 Rajkumar. All rights reserved.
     </footer>
-</body>
-</html>
 
+    <script>
+      function copyEmail() {
+        const email = document.getElementById("email").innerText;
+        navigator.clipboard.writeText(email).then(() => {
+          alert("Email copied to clipboard!");
+        });
+      }
+    </script>
+  </body>
+</html>
